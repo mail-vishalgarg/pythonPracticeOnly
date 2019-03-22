@@ -1,5 +1,20 @@
-print 'this is the first program'
+__author__="Vishal Garg"
+#Divice two numbers without using multiplication, + and - opertors
 
-print 'second chance'
+class DivideTwoNumbers(object):
+    def divideTwoNumber(self,dividend, divisor):
+        sum = 0
+        count = -1
+        reminder = 0
+        while sum <= dividend:
+            sum = sum + divisor
+            count += 1
+        reminder = dividend - (count * divisor)
+        print "Reminder:",reminder
+        return count
 
-print 'third line'
+if __name__=='__main__':
+    obj = DivideTwoNumbers()
+    print obj.divideTwoNumber(7,2)
+
+
